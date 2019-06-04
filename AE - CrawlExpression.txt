@@ -1,0 +1,18 @@
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//
+//       filename: AE - CrawlExpression.txt
+//          coder: AdamRyan
+//        program: After Effects
+//    description: This Expression Creates a Crawl Effect at X Frames / Second
+//      extention: Expression TXT
+//       licensce: OpenSource
+//        website: adamryan.info
+//
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+t = time;  
+fr = t/thisComp.frameDuration;  
+y = value [1];  
+s = 5; //Speed in pixels per frame must be a whole number  
+x = value[0] - (fr * s);  
+[x, y] 

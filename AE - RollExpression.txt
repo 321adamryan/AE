@@ -1,0 +1,18 @@
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//
+//       filename: AE - RollExpression.txt
+//          coder: AdamRyan
+//        program: After Effects
+//    description: This Expression Creates a Roll Effect at X Frames / Second
+//      extention: Expression TXT
+//       licensce: OpenSource
+//        website: adamryan.info
+//
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+t = time;  
+fr = t/thisComp.frameDuration;  
+x = value [0];  
+s = 4; //Speed in pixels per frame  
+  
+[x, fr*s] 
